@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman';
+}
+
+body {
+    background-color: lightgray;
+}
+
+/* Cabeçalho */
+header {
+    background-color: black;
+    padding: 20px 0;
+}
+
+h1 {
+    text-align: center;
+    color: red;
+    font-variant: small-caps;
+}
+
+h2 {
+    font-variant: small-caps;
+}
+
+/* Container Principal */
+#div-conteudo {         
+    background-color: white;
+    margin: 60px auto;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    width: 80%;
+    overflow: auto;
+}
+
+p {
+    margin: 15px 0 5px;       /*15px margem superior / 0 px margem lateral (tela inteira) / 5 px margem inferior */
+    font-size: 18px;
+    font-variant: small-caps;
+}
+
+/* Botões */
+input {
+    padding: 0px 4px;
+    height: 27px;
+    border-radius: 7px;
+}
+
+input[type="submit"] {
+    border: none;
+    background-color: black;
+    color: white;
+}
+
+input[type="text"], input[type="number"] {  /* caixa do formulário tipo text e number */
+    width: 150px;                           /* define a largura de cada caixa input do formulário */
+}
+
+/* Formulario */
+
+.conteudo-form {          /* começar com ponto é para estilizar class. começar com # é para estilizar id */
+    display: flex;        /* deixa flexível (não precisa sem embaixo um do outro)a organização do conteúdo dentro da class=conteudo-form */
+    flex-wrap: wrap;      /* quando o conteúdo for grande, quebra a linha, e a última caixa input desce para a outra linha */ 
+}
+
+.linha-form {
+    width: max-content;           /* largura da linha do formulário é igual ao tamanho de seu conteúdo. Ex: Começa em E de Endereço até o último caracter da caixa de input */
+    display: flex;       
+    flex-wrap: nowrap;
+    justify-content: flex-start;  /* alinha o conteúdo no início da div horizontalmente */
+    align-items: center;          /* alinha o conteúdo no centro da div verticalmente */
+    font-size: 16px;
+    margin-right: 20px;
+}
+
+input[name="txtendereco"] {       /* somente para a caixa de input Endereço quero uma largura maior */
+    width: 333px;
+}

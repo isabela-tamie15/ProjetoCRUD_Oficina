@@ -1,0 +1,95 @@
+* {                                 /* este trecho define a configuração de todos elementos do body */
+    margin: 0;                      /* espaço entre um elemento e outro */
+    padding: 0;                     /* espaço entre o elemento e sua borda. Ex: imagem até a borda */
+    box-sizing: border-box;         
+    font-family: 'Times New Roman';
+}
+
+body {
+    background-color: lightgray;     /* cor de fundo apenas do body, fora das tags que tem estilos independentes */
+}
+
+/* Cabeçalho */
+header {
+    background-color: black;          /* cor de fundo apenas da tag header (cabeçalho) que ficou preta */
+    padding: 20px 0;                  /* no sentido vertical, espaço de 20 pixels antes do título e 20 pixels depois do título*/
+}                                     /* 0 é espaço na horizontal para facilitar a centralização do título */
+
+h1 {
+    text-align: center;               /* alinha o texto do título h1 no centro */
+    color: red;
+    font-variant: small-caps;         /* destacou a 1a letra deixando ela mais alta que as demais (formato versalete)*/
+}
+
+
+/* Container Principal */
+#div-conteudo {                       /* # é seletor que é resposta do id= */
+    background-color: white;          /* conteúdo todo terá cor de fundo branca, apenas cabeçalho e tabela terão cor diferentes */
+    margin: 60px auto;                /* margem entre cabeçalho e div conteúdo, parte laranja do navegador. auto centraliza o conteúdo na horizontal */
+    border: 1px solid black;          /* borda fina preta da parte verde do navegador */
+    border-radius: 5px;               /* radius arredonda as bordas do elemento anterior */
+    padding: 10px;                    /* 10 pixels é a largura da parte verde do navegador */
+    width: 80%;                       /* largura do elemento chega a ser 80% da largura total da tela */
+    overflow: auto;                   /* se a tabela de conteúdo ficar grande e não couber na tela, cria uma barra de rolagem */
+}
+
+p {
+    margin: 15px 0;                    /* margem laranja em cima e embaixo da Mensagem */
+    font-size: 20px;                   /* tamanho da fonte da Mensagem */
+}
+
+#div-form {
+    display: flex;                      /* por padrão, os elementos ficam um abaixo do outro. o flex torna a organização dos elementos flexível */
+    flex-direction: row;                /* define a direção do conteúdo do form, pode ser row (linha) ou column (coluna)*/
+    justify-content: space-between;     /* define espaço entre o form do Filtrar e o form do Novo Carro, parte roxa do navegador */
+    justify-items: flex-start;
+}
+
+
+/* Tabela */
+table {
+    width: 100%;                         /* tabela está dentro da div, e define que a tabela terá a largura igual a da div */
+    text-align: center;                  /* centraliza o texto dentro da tabela na direção horizontal */
+}
+
+
+table, th, tr, td {
+    border: 1px solid black;             /* coloca borda na tabela, na linha, e nas colunas da tabela */
+    border-collapse: collapse;           /* retira a borda dupla que vem por padrão */
+}
+
+th, td {                                 
+    padding: 0 2px;                      /* centraliza a imagem verticalmente */
+    height: 1.6em;                       /* define a altura de cada linha */
+}
+
+th {
+    background-color: black;             /* coluna do cabeçalho tem fundo preto */
+    color: white;                        /* coluna do cabeçalho tem fonte branca */
+}
+
+a {
+    height: max-content;
+}
+
+img {
+    height: 23px;                        /* altura da imagem */
+    object-fit: contain;                 /* imagem preenche todo o conteúdo da tag a, sem perder a proporção */
+}
+
+/* Botões */
+input { /*altura largura*/               /* a palavra antes da { é o seletor, para estilizar este grupo de forma independente */
+    padding: 0px 4px;                    /* distância entre a borda e o conteúdo, tanto na vertical quando na horizontal */
+    height: 27px;                        /* define a altura externa do botão */
+    border-radius: 7px;                  /* define que a borda do botão tem canto arrendondado */
+}
+
+input[type="submit"] {                   /* limita essas estilizações apenas para botões (submit) */
+    border: none;                        /* sem borda, apenas cor de fundo */
+    background-color: black;             /* cor do fundo */
+    color: white;                        /* cor da fonte */
+}
+
+input[value="Novo Carro"] {              /* ao selecionar o botão Novo Carro, a margem direita laranja representa este espaçamento */
+    margin-right: 30px;                  /* apenas para o botão Novo Carro quero uma margem direita de 30 pixels */
+} 

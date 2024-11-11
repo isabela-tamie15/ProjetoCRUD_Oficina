@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman';
+}
+
+body {
+    background-color: lightgray;
+}
+
+/* Cabeçalho */
+header {
+    background-color: black;
+    padding: 20px 0;
+}
+
+h1 {
+    text-align: center;
+    color: red;
+    font-variant: small-caps;
+}
+
+h2 {
+    font-variant: small-caps;
+}
+
+/* Container Principal */
+#div-conteudo {
+    background-color: white;
+    margin: 60px auto;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    width: 95%;               /* só isso mudou em relação a tela_novocadastro. Antes o conteúdo ocupava 80% da tela, agora ocupa 95% da tela */
+    overflow: auto;
+}
+
+p {
+    margin: 15px 0 5px;
+    font-size: 18px;
+    font-variant: small-caps;
+}
+
+/* Botões */
+input {
+    padding: 0px 4px;
+    height: 27px;
+    border-radius: 7px;
+}
+
+input[type="submit"] {
+    border: none;
+    background-color: black;
+    color: white;
+}
+
+input[type="text"], input[type="number"] {
+    width: 150px;
+}
+
+/* Formulario */
+
+.conteudo-form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.linha-form {
+    width: max-content;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 16px;
+    margin-right: 20px;
+}
+
+input[name="txtendereco"] {  /* só isso mudou em relação a tela_novocadastro. Antes a largura era 333%, agora é 500% */
+    width: 500px;
+}
